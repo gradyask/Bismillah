@@ -1,0 +1,39 @@
+body {
+	background: #00ff7f;
+}
+/*Login*/
+.login-panel {
+	margin-top: 10%;
+	background: #00ffff
+}
+.input-group {
+	margin-bottom: 5%;
+}
+.alert {
+	margin-top: 5%;
+}
+/*End Login*/
+
+/*Keluhan*/
+.form-keluhan {
+	margin-top: 100px;
+	}
+.dropdown-toggle {
+	margin-left: 1050px;
+	}
+.dropdown-menu{
+		margin-left: 1050px;
+	}
+/*End Keluhan*/
+
+/*Index*/
+h1{
+margin-top: 50px;
+}
+/*End Index*/
+
+/*update*/
+.Setting {
+	margin-left: 220px;
+	}
+/*End update*/

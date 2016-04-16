@@ -33,10 +33,13 @@
 									<input class="form-control" placeholder="Masukan Password" name="password" type="password">
 								</div>
 								<button type="submit" class="btn btn-info btn-block">Login</button>
-								
-								
-								
-								<?php
+									
+							</fieldset>
+						</form>
+						<center><a href="Module/daftar.php">SignUpHere</a></center>
+					</div>
+				</div>
+				<?php
 									session_start();
 									if(isset($_SESSION['alert'])){
 										?>
@@ -45,14 +48,6 @@
 									}
 									session_destroy();
 								?>
-									
-
-									
-							</fieldset>
-						</form>
-						<center><a href="Module/daftar.php">SignUpHere</a></center>
-					</div>
-				</div>
 			</div>
 		</div>
 	</div>

@@ -186,12 +186,12 @@
             <label class="control-label col-xs-3">Jenis Kelamin:</label>
             <div class="col-xs-1">
                 <label class="radio-inline">
-                    <input name = "jk" type="radio" name="gender" value="Laki-laki" required> Laki-laki
+                    <input name = "jk" type="radio" value="Laki-laki" required> Laki-laki
                 </label>
             </div>
             <div class="col-xs-2">
                 <label class="radio-inline">
-                    <input name = "jk" type="radio" name="gender" value="Perempuan" required> Perempuan
+                    <input name = "jk" type="radio" value="Perempuan" required> Perempuan
                 </label>
             </div>
         </div>

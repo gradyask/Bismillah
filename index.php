@@ -9,7 +9,10 @@
     <!-- Bootstrap -->
     <link href="Assets/css/bootstrap.min.css" rel="stylesheet" type="text/css">
     <link href="Assets/css/style.css" rel="stylesheet" />
-
+	<!-- jQuery-->
+    <script src="js/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
    
 </head>
 <body>
@@ -26,17 +29,17 @@
 							<fieldset>
 								<div class="input-group">
 									<span class="input-group-addon"><i class="glyphicon glyphicon-user glyphicon"> Username</i></span>
-									<input class="form-control" placeholder="Masukan Username" name="username" type="text" autofocus>
+									<input class="form-control" placeholder="Masukan Username" name="username" type="text" autofocus, required>
 								</div>
 								<div class="input-group">
 									<span class="input-group-addon"><i class="glyphicon glyphicon-lock"> Password</i></span>
-									<input class="form-control" placeholder="Masukan Password" name="password" type="password">
+									<input class="form-control" placeholder="Masukan Password" name="password" type="password" required>
 								</div>
 								<button type="submit" class="btn btn-info btn-block">Login</button>
 									
 							</fieldset>
 						</form>
-						<center><a href="Module/daftar.php">SignUpHere</a></center>
+						<center>Don't have an account! <a href="Module/daftar.php">Sign Up Here</a></center>
 					</div>
 				</div>
 				<?php
@@ -52,9 +55,5 @@
 		</div>
 	</div>
 
-    <!-- jQuery-->
-    <script src="js/jquery.min.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="js/bootstrap.min.js"></script>
 </body>
 </html>

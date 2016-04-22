@@ -10,12 +10,23 @@
 		$result1 = mysqli_query($conn, $sql1);
 		$row = mysqli_fetch_assoc($result1);
 		
-		
 		if ($password == $row["password"]) {//benar
-			$sql2 = "INSERT INTO tr_user VALUES ('$username','Admin login')";
+			$sql2 = "INSERT INTO tr_user VALUES ('$username','login', now())";
 			$result2 = mysqli_query($conn, $sql2);
-			//$_SESSION['alert']="masuk";
-			header ('Location: ../index.php');
+			$_SESSION['alert']="masuk";
+			
+			$sql3 = "SELECT * FROM tr_antrian WHERE username = '$username'";
+			$result3 = mysqli_query($conn, $sql3);
+			$count = mysqli_num_rows($result3);
+			//echo $count;
+			if ( $count > 0) {
+				header ("Location: ../Module/Antrian.php?user=$username");
+			}
+			else{
+				header ("Location: ../Module/keluhan.php?user=$username");
+			}
+			
+			
 		} else{
 			$_SESSION['alert']="gagal";
 			header ('Location: ../index.php');
